@@ -8,7 +8,13 @@
     
     android:background="@drawable/tictactoebackground"
     tools:context=".MainActivity">
-  
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:text="Tic Tac Toe" />
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="154dp"
