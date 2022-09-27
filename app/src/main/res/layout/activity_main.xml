@@ -5,5 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    
     android:background="@drawable/tictactoebackground"
     tools:context=".MainActivity"/>
+
+    tools:context=".MainActivity">
+  
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:text="Instructions for TicTacToe" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:text="To begin there will be two players, player
+one and player two player one will begin by placing an X anywhere within the cells. Player
+two will then place an 0 within the cells. The first person to get three of their
+characters placed in a row will be the winner." />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:onClick="startGame"
+        android:text="Start Game"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+  
+</LinearLayout>
