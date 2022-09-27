@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
+  
     <TextView
         android:layout_width="match_parent"
         android:layout_height="154dp"
@@ -20,7 +20,15 @@ one and player two player one will begin by placing an X anywhere within the cel
 two will then place an 0 within the cells. The first person to get three of their
 characters placed in a row will be the winner." />
 
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:onClick="startGame"
+        android:text="Start Game"
+        android:textAlignment="center"
+        android:textSize="16sp" />
 
-
-
+  
 </LinearLayout>
