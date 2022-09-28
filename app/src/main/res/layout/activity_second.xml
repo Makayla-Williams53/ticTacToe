@@ -5,18 +5,108 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SecondActivity">
+    tools:context=".SecondActivity"
+
+
+    >
+
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Welcome to the second screen" />
+        android:layout_height="225dp"
+        />
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/cells" />
+        android:orientation="horizontal">
 
+
+        <ImageView
+            android:id="@+id/xo1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:onClick="playerClick1"
+            app:srcCompat="@drawable/x" />
+
+        <ImageView
+            android:id="@+id/xo2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:onClick="playerClick2"
+            app:srcCompat="@drawable/x" />
+
+        <ImageView
+            android:id="@+id/xo3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:onClick="playerClick3"
+            app:srcCompat="@drawable/x" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/xo4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:onClick="playerClick4"
+            app:srcCompat="@drawable/x" />
+
+        <ImageView
+            android:id="@+id/xo5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:onClick="playerClick5"
+            app:srcCompat="@drawable/x" />
+
+        <ImageView
+            android:id="@+id/xo6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:onClick="playerClick6"
+            app:srcCompat="@drawable/x" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/xo7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:onClick="playerClick7"
+            app:srcCompat="@drawable/x" />
+
+        <ImageView
+            android:id="@+id/xo8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:onClick="playerClick8"
+            app:srcCompat="@drawable/x" />
+
+        <ImageView
+            android:id="@+id/xo9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:onClick="playerClick9"
+            app:srcCompat="@drawable/x" />
+    </LinearLayout>
 </LinearLayout>
