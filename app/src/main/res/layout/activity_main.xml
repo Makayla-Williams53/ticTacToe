@@ -11,18 +11,30 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="154dp"
-        android:text="Tic Tac Toe" />
+        android:layout_height="150dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Tic Tac Toe"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp" />
 
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="154dp"
-        android:text="Instructions for TicTacToe" />
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Instructions for TicTacToe:"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="154dp"
+        android:layout_height="200dp"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         android:text="To begin there will be two players, player
 one and player two player one will begin by placing an X anywhere within the cells. Player
 two will then place an 0 within the cells. The first person to get three of their
