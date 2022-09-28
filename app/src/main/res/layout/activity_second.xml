@@ -14,13 +14,15 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="225dp"
+        android:layout_height="175dp"
         />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
 
 
         <ImageView
@@ -29,7 +31,7 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:onClick="playerClick1"
-            app:srcCompat="@drawable/x" />
+            app:srcCompat="@drawable/blank" />
 
         <ImageView
             android:id="@+id/xo2"
@@ -37,7 +39,7 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:onClick="playerClick2"
-            app:srcCompat="@drawable/x" />
+            app:srcCompat="@drawable/blank" />
 
         <ImageView
             android:id="@+id/xo3"
@@ -45,13 +47,15 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:onClick="playerClick3"
-            app:srcCompat="@drawable/x" />
+            app:srcCompat="@drawable/blank" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
 
 
         <ImageView
@@ -60,7 +64,7 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:onClick="playerClick4"
-            app:srcCompat="@drawable/x" />
+            app:srcCompat="@drawable/blank" />
 
         <ImageView
             android:id="@+id/xo5"
@@ -68,7 +72,7 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:onClick="playerClick5"
-            app:srcCompat="@drawable/x" />
+            app:srcCompat="@drawable/blank" />
 
         <ImageView
             android:id="@+id/xo6"
@@ -76,13 +80,15 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:onClick="playerClick6"
-            app:srcCompat="@drawable/x" />
+            app:srcCompat="@drawable/blank" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
 
 
         <ImageView
@@ -91,7 +97,7 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:onClick="playerClick7"
-            app:srcCompat="@drawable/x" />
+            app:srcCompat="@drawable/blank" />
 
         <ImageView
             android:id="@+id/xo8"
@@ -99,7 +105,7 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:onClick="playerClick8"
-            app:srcCompat="@drawable/x" />
+            app:srcCompat="@drawable/blank" />
 
         <ImageView
             android:id="@+id/xo9"
@@ -107,6 +113,6 @@
             android:layout_height="100dp"
             android:layout_weight="1"
             android:onClick="playerClick9"
-            app:srcCompat="@drawable/x" />
+            app:srcCompat="@drawable/blank" />
     </LinearLayout>
 </LinearLayout>

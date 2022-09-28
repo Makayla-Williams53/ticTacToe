@@ -10,6 +10,7 @@ import android.widget.ImageView;
 public class SecondActivity extends AppCompatActivity {
 
     public int playerTurn = 1;
+    public boolean cell1 = false, cell2 = false, cell3 = false, cell4 = false, cell5 = false, cell6 = false, cell7 = false, cell8 = false, cell9 = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,19 +20,23 @@ public class SecondActivity extends AppCompatActivity {
 
     public void playerClick1(View v)
     {
-        if(playerTurn == 1)
+        if(cell1 == false)
         {
-            ImageView box1 = (ImageView) findViewById(R.id.xo1);
-            Drawable playerSymbol = getResources().getDrawable(R.drawable.o);
-            box1.setImageDrawable(playerSymbol);
-            playerTurn = 2;
-        }
-        else
-        {
-            ImageView box1 = (ImageView) findViewById(R.id.xo1);
-            Drawable playerSymbol = getResources().getDrawable(R.drawable.x);
-            box1.setImageDrawable(playerSymbol);
-            playerTurn = 1;
+            if(playerTurn == 1)
+            {
+                ImageView box1 = (ImageView) findViewById(R.id.xo1);
+                Drawable playerSymbol = getResources().getDrawable(R.drawable.o);
+                box1.setImageDrawable(playerSymbol);
+                playerTurn = 2;
+            }
+            else
+            {
+                ImageView box1 = (ImageView) findViewById(R.id.xo1);
+                Drawable playerSymbol = getResources().getDrawable(R.drawable.x);
+                box1.setImageDrawable(playerSymbol);
+                playerTurn = 1;
+            }
+            cell1 = true;
         }
     }
 
