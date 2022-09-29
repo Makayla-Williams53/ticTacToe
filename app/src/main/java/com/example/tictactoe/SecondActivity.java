@@ -6,6 +6,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -13,11 +14,14 @@ public class SecondActivity extends AppCompatActivity {
     public int playerTurn = 1;
     //creates a variable for each cell to determine if they have been used or not
     public boolean cell1 = false, cell2 = false, cell3 = false, cell4 = false, cell5 = false, cell6 = false, cell7 = false, cell8 = false, cell9 = false;
+    private TextView playerText;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+        playerText = findViewById(R.id.playerT);
     }
 
     //when the top left button is clicked
@@ -44,6 +48,7 @@ public class SecondActivity extends AppCompatActivity {
             }
             //changes the variable to show that this square has been used
             cell1 = true;
+            changeTurn();
         }
     }
 
@@ -71,6 +76,7 @@ public class SecondActivity extends AppCompatActivity {
             }
             //changes the variable to show that this square has been used
             cell2 = true;
+            changeTurn();
         }
     }
 
@@ -98,6 +104,7 @@ public class SecondActivity extends AppCompatActivity {
             }
             //changes the variable to show that this square has been used
             cell3 = true;
+            changeTurn();
         }
     }
 
@@ -125,6 +132,7 @@ public class SecondActivity extends AppCompatActivity {
             }
             //changes the variable to show that this square has been used
             cell4 = true;
+            changeTurn();
         }
     }
 
@@ -152,6 +160,7 @@ public class SecondActivity extends AppCompatActivity {
             }
             //changes the variable to show that this square has been used
             cell5 = true;
+            changeTurn();
         }
     }
 
@@ -179,6 +188,7 @@ public class SecondActivity extends AppCompatActivity {
             }
             //changes the variable to show that this square has been used
             cell6 = true;
+            changeTurn();
         }
     }
 
@@ -206,6 +216,7 @@ public class SecondActivity extends AppCompatActivity {
             }
             //changes the variable to show that this square has been used
             cell7 = true;
+            changeTurn();
         }
     }
 
@@ -233,6 +244,7 @@ public class SecondActivity extends AppCompatActivity {
             }
             //changes the variable to show that this square has been used
             cell8 = true;
+            changeTurn();
         }
     }
 
@@ -260,6 +272,19 @@ public class SecondActivity extends AppCompatActivity {
             }
             //changes the variable to show that this square has been used
             cell9 = true;
+            changeTurn();
+        }
+    }
+
+    public void changeTurn ()
+    {
+        if (playerTurn == 1)
+        {
+            playerText.setText("Player X Turn");
+        }
+        else if (playerTurn == 2)
+        {
+            playerText.setText("Player O Turn");
         }
     }
 }
