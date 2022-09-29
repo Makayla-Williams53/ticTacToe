@@ -25,14 +25,14 @@ public class SecondActivity extends AppCompatActivity {
             if(playerTurn == 1)
             {
                 ImageView box1 = (ImageView) findViewById(R.id.xo1);
-                Drawable playerSymbol = getResources().getDrawable(R.drawable.o);
+                Drawable playerSymbol = getResources().getDrawable(R.drawable.x);
                 box1.setImageDrawable(playerSymbol);
                 playerTurn = 2;
             }
             else
             {
                 ImageView box1 = (ImageView) findViewById(R.id.xo1);
-                Drawable playerSymbol = getResources().getDrawable(R.drawable.x);
+                Drawable playerSymbol = getResources().getDrawable(R.drawable.o);
                 box1.setImageDrawable(playerSymbol);
                 playerTurn = 1;
             }
@@ -42,145 +42,177 @@ public class SecondActivity extends AppCompatActivity {
 
     public void playerClick2(View v)
     {
-        if(playerTurn == 1)
+        if(cell2 == false)
         {
-            ImageView box1 = (ImageView) findViewById(R.id.xo2);
-            Drawable playerSymbol = getResources().getDrawable(R.drawable.o);
-            box1.setImageDrawable(playerSymbol);
-            playerTurn = 2;
-        }
-        else
-        {
-            ImageView box1 = (ImageView) findViewById(R.id.xo2);
-            Drawable playerSymbol = getResources().getDrawable(R.drawable.x);
-            box1.setImageDrawable(playerSymbol);
-            playerTurn = 1;
+            if(playerTurn == 1)
+            {
+                ImageView box1 = (ImageView) findViewById(R.id.xo2);
+                Drawable playerSymbol = getResources().getDrawable(R.drawable.x);
+                box1.setImageDrawable(playerSymbol);
+                playerTurn = 2;
+            }
+            else
+            {
+                ImageView box1 = (ImageView) findViewById(R.id.xo2);
+                Drawable playerSymbol = getResources().getDrawable(R.drawable.o);
+                box1.setImageDrawable(playerSymbol);
+                playerTurn = 1;
+            }
+            cell2 = true;
         }
     }
 
     public void playerClick3(View v)
     {
-        if(playerTurn == 1)
+        if(cell3 == false)
         {
-            ImageView box1 = (ImageView) findViewById(R.id.xo3);
-            Drawable playerSymbol = getResources().getDrawable(R.drawable.o);
-            box1.setImageDrawable(playerSymbol);
-            playerTurn = 2;
-        }
-        else
-        {
-            ImageView box1 = (ImageView) findViewById(R.id.xo3);
-            Drawable playerSymbol = getResources().getDrawable(R.drawable.x);
-            box1.setImageDrawable(playerSymbol);
-            playerTurn = 1;
+            if(playerTurn == 1)
+            {
+                ImageView box1 = (ImageView) findViewById(R.id.xo3);
+                Drawable playerSymbol = getResources().getDrawable(R.drawable.x);
+                box1.setImageDrawable(playerSymbol);
+                playerTurn = 2;
+            }
+            else
+            {
+                ImageView box1 = (ImageView) findViewById(R.id.xo3);
+                Drawable playerSymbol = getResources().getDrawable(R.drawable.o);
+                box1.setImageDrawable(playerSymbol);
+                playerTurn = 1;
+            }
+            cell3 = true;
         }
     }
 
     public void playerClick4(View v)
     {
-        if(playerTurn == 1)
+        if(cell4 == false)
         {
-            ImageView box1 = (ImageView) findViewById(R.id.xo4);
-            Drawable playerSymbol = getResources().getDrawable(R.drawable.o);
-            box1.setImageDrawable(playerSymbol);
-            playerTurn = 2;
-        }
-        else
-        {
-            ImageView box1 = (ImageView) findViewById(R.id.xo4);
-            Drawable playerSymbol = getResources().getDrawable(R.drawable.x);
-            box1.setImageDrawable(playerSymbol);
-            playerTurn = 1;
+            if(playerTurn == 1)
+            {
+                ImageView box1 = (ImageView) findViewById(R.id.xo4);
+                Drawable playerSymbol = getResources().getDrawable(R.drawable.x);
+                box1.setImageDrawable(playerSymbol);
+                playerTurn = 2;
+            }
+            else
+            {
+                ImageView box1 = (ImageView) findViewById(R.id.xo4);
+                Drawable playerSymbol = getResources().getDrawable(R.drawable.o);
+                box1.setImageDrawable(playerSymbol);
+                playerTurn = 1;
+            }
+            cell4 = true;
         }
     }
 
     public void playerClick5(View v)
     {
-        if(playerTurn == 1)
+        if(cell5 == false)
         {
-            ImageView box1 = (ImageView) findViewById(R.id.xo5);
-            Drawable playerSymbol = getResources().getDrawable(R.drawable.o);
-            box1.setImageDrawable(playerSymbol);
-            playerTurn = 2;
-        }
-        else
-        {
-            ImageView box1 = (ImageView) findViewById(R.id.xo5);
-            Drawable playerSymbol = getResources().getDrawable(R.drawable.x);
-            box1.setImageDrawable(playerSymbol);
-            playerTurn = 1;
+            if(playerTurn == 1)
+            {
+                ImageView box1 = (ImageView) findViewById(R.id.xo5);
+                Drawable playerSymbol = getResources().getDrawable(R.drawable.x);
+                box1.setImageDrawable(playerSymbol);
+                playerTurn = 2;
+            }
+            else
+            {
+                ImageView box1 = (ImageView) findViewById(R.id.xo5);
+                Drawable playerSymbol = getResources().getDrawable(R.drawable.o);
+                box1.setImageDrawable(playerSymbol);
+                playerTurn = 1;
+            }
+            cell5 = true;
         }
     }
 
     public void playerClick6(View v)
     {
-        if(playerTurn == 1)
+        if(cell6 == false)
         {
-            ImageView box1 = (ImageView) findViewById(R.id.xo6);
-            Drawable playerSymbol = getResources().getDrawable(R.drawable.o);
-            box1.setImageDrawable(playerSymbol);
-            playerTurn = 2;
-        }
-        else
-        {
-            ImageView box1 = (ImageView) findViewById(R.id.xo6);
-            Drawable playerSymbol = getResources().getDrawable(R.drawable.x);
-            box1.setImageDrawable(playerSymbol);
-            playerTurn = 1;
+            if(playerTurn == 1)
+            {
+                ImageView box1 = (ImageView) findViewById(R.id.xo6);
+                Drawable playerSymbol = getResources().getDrawable(R.drawable.x);
+                box1.setImageDrawable(playerSymbol);
+                playerTurn = 2;
+            }
+            else
+            {
+                ImageView box1 = (ImageView) findViewById(R.id.xo6);
+                Drawable playerSymbol = getResources().getDrawable(R.drawable.o);
+                box1.setImageDrawable(playerSymbol);
+                playerTurn = 1;
+            }
+            cell6 = true;
         }
     }
 
     public void playerClick7(View v)
     {
-        if(playerTurn == 1)
+        if(cell7 == false)
         {
-            ImageView box1 = (ImageView) findViewById(R.id.xo7);
-            Drawable playerSymbol = getResources().getDrawable(R.drawable.o);
-            box1.setImageDrawable(playerSymbol);
-            playerTurn = 2;
-        }
-        else
-        {
-            ImageView box1 = (ImageView) findViewById(R.id.xo7);
-            Drawable playerSymbol = getResources().getDrawable(R.drawable.x);
-            box1.setImageDrawable(playerSymbol);
-            playerTurn = 1;
+            if(playerTurn == 1)
+            {
+                ImageView box1 = (ImageView) findViewById(R.id.xo7);
+                Drawable playerSymbol = getResources().getDrawable(R.drawable.x);
+                box1.setImageDrawable(playerSymbol);
+                playerTurn = 2;
+            }
+            else
+            {
+                ImageView box1 = (ImageView) findViewById(R.id.xo7);
+                Drawable playerSymbol = getResources().getDrawable(R.drawable.o);
+                box1.setImageDrawable(playerSymbol);
+                playerTurn = 1;
+            }
+            cell7 = true;
         }
     }
 
     public void playerClick8(View v)
     {
-        if(playerTurn == 1)
+        if(cell8 == false)
         {
-            ImageView box1 = (ImageView) findViewById(R.id.xo8);
-            Drawable playerSymbol = getResources().getDrawable(R.drawable.o);
-            box1.setImageDrawable(playerSymbol);
-            playerTurn = 2;
-        }
-        else
-        {
-            ImageView box1 = (ImageView) findViewById(R.id.xo8);
-            Drawable playerSymbol = getResources().getDrawable(R.drawable.x);
-            box1.setImageDrawable(playerSymbol);
-            playerTurn = 1;
+            if(playerTurn == 1)
+            {
+                ImageView box1 = (ImageView) findViewById(R.id.xo8);
+                Drawable playerSymbol = getResources().getDrawable(R.drawable.x);
+                box1.setImageDrawable(playerSymbol);
+                playerTurn = 2;
+            }
+            else
+            {
+                ImageView box1 = (ImageView) findViewById(R.id.xo8);
+                Drawable playerSymbol = getResources().getDrawable(R.drawable.o);
+                box1.setImageDrawable(playerSymbol);
+                playerTurn = 1;
+            }
+            cell8 = true;
         }
     }
 
     public void playerClick9(View v)
     {
-        if(playerTurn == 1)
+        if(cell9 == false)
         {
-            ImageView box1 = (ImageView) findViewById(R.id.xo9);
-            Drawable playerSymbol = getResources().getDrawable(R.drawable.o);
-            box1.setImageDrawable(playerSymbol);
-            playerTurn = 2;
-        }
-        else
-        {
-            ImageView box1 = (ImageView) findViewById(R.id.xo9);
-            Drawable playerSymbol = getResources().getDrawable(R.drawable.x);
-            box1.setImageDrawable(playerSymbol);
-            playerTurn = 1;
+            if(playerTurn == 1)
+            {
+                ImageView box1 = (ImageView) findViewById(R.id.xo9);
+                Drawable playerSymbol = getResources().getDrawable(R.drawable.x);
+                box1.setImageDrawable(playerSymbol);
+                playerTurn = 2;
+            }
+            else
+            {
+                ImageView box1 = (ImageView) findViewById(R.id.xo9);
+                Drawable playerSymbol = getResources().getDrawable(R.drawable.o);
+                box1.setImageDrawable(playerSymbol);
+                playerTurn = 1;
+            }
+            cell9 = true;
         }
     }
 }
