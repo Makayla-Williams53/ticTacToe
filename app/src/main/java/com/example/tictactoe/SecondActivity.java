@@ -31,8 +31,12 @@ public class SecondActivity extends AppCompatActivity {
         TextView winnerView = (TextView) findViewById(R.id.winnerView);
         if(square1 == 1 && square2 == 1 && square3 == 1)
         {
-            winnerView.setText("Player 1 has won!!!");
+            winnerView.setText("Player 1 has won using 123!!!");
         }//end 1st if
+        else if(square4 == 1 && square5 == 1 && square6 == 1)
+        {
+            winnerView.setText("Player 1 has won using 456!!!");
+        }//end 2nd if
     }//end checkWinner
 
     //when the top left button is clicked
