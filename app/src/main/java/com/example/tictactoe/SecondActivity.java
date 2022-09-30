@@ -61,6 +61,11 @@ public class SecondActivity extends AppCompatActivity {
         {
             winnerView.setText("Player 1 has won using 357!!!");
         }//end 8th if
+        else if((square1 == 1 || square1 == 2) && (square2 == 1 || square2 == 2) && (square3 == 1 || square3 == 2) && (square4 == 1 || square4 == 2) &&
+                (square5 == 1 || square5 == 2) && (square6 == 1 || square6 == 2) && (square7 == 1 || square7 == 2) && (square8 == 1 || square8 == 2))
+        {
+            winnerView.setText("You tied!!!");
+        }//end final else if
 
 
         if(square1 == 2 && square2 == 2 && square3 == 2)
@@ -95,7 +100,11 @@ public class SecondActivity extends AppCompatActivity {
         {
             winnerView.setText("Player 2 has won using 357!!!");
         }//end 8th if
-
+        else if((square1 == 1 || square1 == 2) && (square2 == 1 || square2 == 2) && (square3 == 1 || square3 == 2) && (square4 == 1 || square4 == 2) &&
+                (square5 == 1 || square5 == 2) && (square6 == 1 || square6 == 2) && (square7 == 1 || square7 == 2) && (square8 == 1 || square8 == 2))
+        {
+            winnerView.setText("You tied!!!");
+        }//end final else if
 
     }//end checkWinner
 
