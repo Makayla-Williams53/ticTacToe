@@ -44,23 +44,24 @@ public class SecondActivity extends AppCompatActivity {
         else if(square1 == 1 && square4 == 1 && square7 == 1)
         {
             winnerView.setText("Player 1 has won using 147!!!");
-        }
+        }//end 4th if
         else if(square2 == 1 && square5 == 1 && square8 == 1)
         {
             winnerView.setText("Player 1 has won using 258!!!");
-        }
+        }//end 5th if
         else if(square3 == 1 && square6 == 1 && square9 == 1)
         {
             winnerView.setText("Player 1 has won using 369!!!");
-        }
+        }//end 6th if
         else if(square1 == 1 && square5 == 1 && square9 == 1)
         {
             winnerView.setText("Player 1 has won using 159!!!");
-        }
+        }//end 7th if
         else if(square3 == 1 && square5 == 1 && square7 == 1)
         {
             winnerView.setText("Player 1 has won using 357!!!");
-        }
+        }//end 8th if
+
 
         if(square1 == 2 && square2 == 2 && square3 == 2)
         {
@@ -77,23 +78,25 @@ public class SecondActivity extends AppCompatActivity {
         else if(square1 == 2 && square4 == 2 && square7 == 2)
         {
             winnerView.setText("Player 2 has won using 147!!!");
-        }
+        }//end 4th if
         else if(square2 == 2 && square5 == 2 && square8 == 2)
         {
             winnerView.setText("Player 2 has won using 258!!!");
-        }
+        }//end 5th if
         else if(square3 == 2 && square6 == 2 && square9 == 2)
         {
             winnerView.setText("Player 2 has won using 369!!!");
-        }
+        }//end 6th if
         else if(square1 == 2 && square5 == 2 && square9 == 2)
         {
             winnerView.setText("Player 2 has won using 159!!!");
-        }
+        }//end 7th if
         else if(square3 == 2 && square5 == 2 && square7 == 2)
         {
             winnerView.setText("Player 2 has won using 357!!!");
-        }
+        }//end 8th if
+
+
     }//end checkWinner
 
     //when the top left button is clicked
