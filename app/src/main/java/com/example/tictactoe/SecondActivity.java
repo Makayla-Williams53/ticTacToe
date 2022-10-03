@@ -111,9 +111,6 @@ public class SecondActivity extends AppCompatActivity {
 
     }//end checkWinner
 
-        playerText = findViewById(R.id.playerT);
-    }
-
     //when the top left button is clicked
     public void playerClick1(View v)
     {
@@ -141,12 +138,9 @@ public class SecondActivity extends AppCompatActivity {
             //changes the variable to show that this square has been used
             cell1 = true;
         }//end outer if
+        changeTurn();
         checkWinner();
     }//end playerClick1
-            changeTurn();
-        }
-    }
-
 
     //when top middle button is clicked changes it to the correct player's symbol
     public void playerClick2(View v)
@@ -176,11 +170,9 @@ public class SecondActivity extends AppCompatActivity {
             cell2 = true;
 
         }//end outer if
+        changeTurn();
         checkWinner();
     }//end playerClick2
-            changeTurn();
-        }
-    }
 
     //when the top right button is clicked changes it to the correct player's symbol
     public void playerClick3(View v)
@@ -209,11 +201,10 @@ public class SecondActivity extends AppCompatActivity {
             //changes the variable to show that this square has been used
             cell3 = true;
         }//end outer if
+        changeTurn();
         checkWinner();
     }//end playerClick3
-            changeTurn();
-        }
-    }
+
     //when the middle left button is clicked changes it to the correct player's symbol
     public void playerClick4(View v)
     {
@@ -242,11 +233,9 @@ public class SecondActivity extends AppCompatActivity {
             cell4 = true;
 
         }//end outer if
+        changeTurn();
         checkWinner();
     }//end playerClick4
-            changeTurn();
-        }
-    }
 
     //when the middle middle button is clicked changes it to the correct player's symbol
     public void playerClick5(View v)
@@ -275,11 +264,9 @@ public class SecondActivity extends AppCompatActivity {
             //changes the variable to show that this square has been used
             cell5 = true;
         }//end outer if
+        changeTurn();
         checkWinner();
     }//end playerClick5
-            changeTurn();
-        }
-    }
 
     //when the middle right button is clicked changes it to the correct player's symbol
     public void playerClick6(View v)
@@ -308,11 +295,9 @@ public class SecondActivity extends AppCompatActivity {
             //changes the variable to show that this square has been used
             cell6 = true;
         }//end outer if
+        changeTurn();
         checkWinner();
     }//end playerClick6
-            changeTurn();
-        }
-    }
 
     //when the bottom left button is clicked changes it to the correct player's symbol
     public void playerClick7(View v)
@@ -341,11 +326,9 @@ public class SecondActivity extends AppCompatActivity {
             //changes the variable to show that this square has been used
             cell7 = true;
         }//end outer if
+        changeTurn();
         checkWinner();
     }//end playerClick7
-            changeTurn();
-        }
-    }
 
     //when the bottom middle button is clicked changes it to the correct player's symbol
     public void playerClick8(View v)
@@ -374,11 +357,9 @@ public class SecondActivity extends AppCompatActivity {
             //changes the variable to show that this square has been used
             cell8 = true;
         }//end outer if
+        changeTurn();
         checkWinner();
     }//end playerClick8
-            changeTurn();
-        }
-    }
 
     //when the bottom right button is clicked changes it to the correct player's symbol
     public void playerClick9(View v)
@@ -407,16 +388,15 @@ public class SecondActivity extends AppCompatActivity {
             //changes the variable to show that this square has been used
             cell9 = true;
         }//end outer if
+        changeTurn();
         checkWinner();
     }//end playerClick9
 
-}//end Second Activity class
-            changeTurn();
-        }
-    }
 
-    public void changeTurn ()
+    public void changeTurn()
     {
+        playerText = (TextView) findViewById(R.id.playerT);
+
         if (playerTurn == 1)
         {
             playerText.setText("Player X Turn");
