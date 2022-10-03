@@ -31,79 +31,79 @@ public class SecondActivity extends AppCompatActivity {
         TextView winnerView = (TextView) findViewById(R.id.winnerView);
         if(square1 == 1 && square2 == 1 && square3 == 1)
         {
-            winnerView.setText("Player 1 has won using 123!!!");
+            winnerView.setText("Player 1 has won!!!");
         }//end 1st if
         else if(square4 == 1 && square5 == 1 && square6 == 1)
         {
-            winnerView.setText("Player 1 has won using 456!!!");
+            winnerView.setText("Player 1 has won!!!");
         }//end 2nd if
         else if(square7 == 1 && square8 == 1 && square9 == 1)
         {
-            winnerView.setText("Player 1 has won using 789!!!");
+            winnerView.setText("Player 1 has won!!!");
         }//end 3rd if
         else if(square1 == 1 && square4 == 1 && square7 == 1)
         {
-            winnerView.setText("Player 1 has won using 147!!!");
+            winnerView.setText("Player 1 has won!!!");
         }//end 4th if
         else if(square2 == 1 && square5 == 1 && square8 == 1)
         {
-            winnerView.setText("Player 1 has won using 258!!!");
+            winnerView.setText("Player 1 has won!!!");
         }//end 5th if
         else if(square3 == 1 && square6 == 1 && square9 == 1)
         {
-            winnerView.setText("Player 1 has won using 369!!!");
+            winnerView.setText("Player 1 has won!!!");
         }//end 6th if
         else if(square1 == 1 && square5 == 1 && square9 == 1)
         {
-            winnerView.setText("Player 1 has won using 159!!!");
+            winnerView.setText("Player 1 has won!!!");
         }//end 7th if
         else if(square3 == 1 && square5 == 1 && square7 == 1)
         {
-            winnerView.setText("Player 1 has won using 357!!!");
+            winnerView.setText("Player 1 has won!!!");
         }//end 8th if
         else if((square1 == 1 || square1 == 2) && (square2 == 1 || square2 == 2) && (square3 == 1 || square3 == 2) && (square4 == 1 || square4 == 2) &&
                 (square5 == 1 || square5 == 2) && (square6 == 1 || square6 == 2) && (square7 == 1 || square7 == 2) && (square8 == 1 || square8 == 2))
         {
-            winnerView.setText("You tied!!!");
+            winnerView.setText("Y'all tied!!!");
         }//end final else if
 
 
         if(square1 == 2 && square2 == 2 && square3 == 2)
         {
-            winnerView.setText("Player 2 has won using 123!!!");
+            winnerView.setText("Player 2 has won!!!");
         }//end 1st if
         else if(square4 == 2 && square5 == 2 && square6 == 2)
         {
-            winnerView.setText("Player 2 has won using 456!!!");
+            winnerView.setText("Player 2 has won!!!");
         }//end 2nd if
         else if(square7 == 2 && square8 == 2 && square9 == 2)
         {
-            winnerView.setText("Player 2 has won using 789!!!");
+            winnerView.setText("Player 2 has won!!!");
         }//end 3rd if
         else if(square1 == 2 && square4 == 2 && square7 == 2)
         {
-            winnerView.setText("Player 2 has won using 147!!!");
+            winnerView.setText("Player 2 has won!!!");
         }//end 4th if
         else if(square2 == 2 && square5 == 2 && square8 == 2)
         {
-            winnerView.setText("Player 2 has won using 258!!!");
+            winnerView.setText("Player 2 has won!!!");
         }//end 5th if
         else if(square3 == 2 && square6 == 2 && square9 == 2)
         {
-            winnerView.setText("Player 2 has won using 369!!!");
+            winnerView.setText("Player 2 has won!!!");
         }//end 6th if
         else if(square1 == 2 && square5 == 2 && square9 == 2)
         {
-            winnerView.setText("Player 2 has won using 159!!!");
+            winnerView.setText("Player 2 has won!!!");
         }//end 7th if
         else if(square3 == 2 && square5 == 2 && square7 == 2)
         {
-            winnerView.setText("Player 2 has won using 357!!!");
+            winnerView.setText("Player 2 has won!!!");
         }//end 8th if
         else if((square1 == 1 || square1 == 2) && (square2 == 1 || square2 == 2) && (square3 == 1 || square3 == 2) && (square4 == 1 || square4 == 2) &&
                 (square5 == 1 || square5 == 2) && (square6 == 1 || square6 == 2) && (square7 == 1 || square7 == 2) && (square8 == 1 || square8 == 2))
         {
-            winnerView.setText("You tied!!!");
+            winnerView.setText("Y'all tied!!!");
         }//end final else if
 
     }//end checkWinner
