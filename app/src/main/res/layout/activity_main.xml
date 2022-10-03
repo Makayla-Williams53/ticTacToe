@@ -10,45 +10,49 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:text="Tic Tac Toe"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="34sp" />
+        android:textSize="34sp"
+        android:padding="60dp"/>
 
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:text="Instructions for TicTacToe:"
-        android:textAlignment="textStart"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
-        android:textAlignment="textStart"
-        android:textColor="@color/black"
-        android:textSize="20sp"
         android:text="To begin there will be two players, player
 one and player two player one will begin by placing an X anywhere within the cells. Player
 two will then place an 0 within the cells. The first person to get three of their
-characters placed in a row will be the winner." />
+characters placed in a row will be the winner."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:padding="20dp"/>
 
     <Button
         android:id="@+id/startButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#583B80"
         android:fontFamily="sans-serif-black"
         android:onClick="startGame"
         android:text="Start Game"
-        android:textAlignment="center"
-        android:textSize="16sp" />
+        android:layout_gravity="center"
+        android:textSize="16sp"/>
 
   
 </LinearLayout>
