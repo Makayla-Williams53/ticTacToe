@@ -6,6 +6,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -32,52 +33,68 @@ public class SecondActivity extends AppCompatActivity {
 
     public void checkWinner()
     {
+        //creates the winnerView and replayButton and playerView to alter later
         TextView winnerView = (TextView) findViewById(R.id.winnerView);
+        Button replayButton = (Button) findViewById(R.id.replayButton);
+        playerText = (TextView) findViewById(R.id.playerT);
+
         if(square1 == 1 && square2 == 1 && square3 == 1)
         {
+            //says player 1 won
             winnerView.setText("Player 1 has won!!!");
+            //stops game
             inGame = false;
+            //makes replay button visible
+            replayButton.setVisibility(View.VISIBLE);
         }//end 1st if
         else if(square4 == 1 && square5 == 1 && square6 == 1)
         {
             winnerView.setText("Player 1 has won!!!");
             inGame = false;
+            replayButton.setVisibility(View.VISIBLE);
         }//end 2nd if
         else if(square7 == 1 && square8 == 1 && square9 == 1)
         {
             winnerView.setText("Player 1 has won!!!");
             inGame = false;
+            replayButton.setVisibility(View.VISIBLE);
         }//end 3rd if
         else if(square1 == 1 && square4 == 1 && square7 == 1)
         {
             winnerView.setText("Player 1 has won!!!");
             inGame = false;
+            replayButton.setVisibility(View.VISIBLE);
         }//end 4th if
         else if(square2 == 1 && square5 == 1 && square8 == 1)
         {
             winnerView.setText("Player 1 has won!!!");
             inGame = false;
+            replayButton.setVisibility(View.VISIBLE);
         }//end 5th if
         else if(square3 == 1 && square6 == 1 && square9 == 1)
         {
             winnerView.setText("Player 1 has won!!!");
             inGame = false;
+            replayButton.setVisibility(View.VISIBLE);
         }//end 6th if
         else if(square1 == 1 && square5 == 1 && square9 == 1)
         {
             winnerView.setText("Player 1 has won!!!");
             inGame = false;
+            replayButton.setVisibility(View.VISIBLE);
         }//end 7th if
         else if(square3 == 1 && square5 == 1 && square7 == 1)
         {
             winnerView.setText("Player 1 has won!!!");
             inGame = false;
+            replayButton.setVisibility(View.VISIBLE);
         }//end 8th if
         else if((square1 == 1 || square1 == 2) && (square2 == 1 || square2 == 2) && (square3 == 1 || square3 == 2) && (square4 == 1 || square4 == 2) &&
                 (square5 == 1 || square5 == 2) && (square6 == 1 || square6 == 2) && (square7 == 1 || square7 == 2) && (square8 == 1 || square8 == 2))
         {
             winnerView.setText("Y'all tied!!!");
             inGame = false;
+            replayButton.setVisibility(View.VISIBLE);
         }//end final else if
 
 
@@ -85,47 +102,56 @@ public class SecondActivity extends AppCompatActivity {
         {
             winnerView.setText("Player 2 has won!!!");
             inGame = false;
+            replayButton.setVisibility(View.VISIBLE);
         }//end 1st if
         else if(square4 == 2 && square5 == 2 && square6 == 2)
         {
             winnerView.setText("Player 2 has won!!!");
             inGame = false;
+            replayButton.setVisibility(View.VISIBLE);
         }//end 2nd if
         else if(square7 == 2 && square8 == 2 && square9 == 2)
         {
             winnerView.setText("Player 2 has won!!!");
             inGame = false;
+            replayButton.setVisibility(View.VISIBLE);
         }//end 3rd if
         else if(square1 == 2 && square4 == 2 && square7 == 2)
         {
             winnerView.setText("Player 2 has won!!!");
             inGame = false;
+            replayButton.setVisibility(View.VISIBLE);
         }//end 4th if
         else if(square2 == 2 && square5 == 2 && square8 == 2)
         {
             winnerView.setText("Player 2 has won!!!");
             inGame = false;
+            replayButton.setVisibility(View.VISIBLE);
         }//end 5th if
         else if(square3 == 2 && square6 == 2 && square9 == 2)
         {
             winnerView.setText("Player 2 has won!!!");
             inGame = false;
+            replayButton.setVisibility(View.VISIBLE);
         }//end 6th if
         else if(square1 == 2 && square5 == 2 && square9 == 2)
         {
             winnerView.setText("Player 2 has won!!!");
             inGame = false;
+            replayButton.setVisibility(View.VISIBLE);
         }//end 7th if
         else if(square3 == 2 && square5 == 2 && square7 == 2)
         {
             winnerView.setText("Player 2 has won!!!");
             inGame = false;
+            replayButton.setVisibility(View.VISIBLE);
         }//end 8th if
         else if((square1 == 1 || square1 == 2) && (square2 == 1 || square2 == 2) && (square3 == 1 || square3 == 2) && (square4 == 1 || square4 == 2) &&
                 (square5 == 1 || square5 == 2) && (square6 == 1 || square6 == 2) && (square7 == 1 || square7 == 2) && (square8 == 1 || square8 == 2))
         {
             winnerView.setText("Y'all tied!!!");
             inGame = false;
+            replayButton.setVisibility(View.VISIBLE);
         }//end final else if
 
     }//end checkWinner
@@ -447,6 +473,7 @@ public class SecondActivity extends AppCompatActivity {
         }//end very outer if
     }//end playerClick9
 
+    //replay button onclick
     public void replay(View v)
     {
         //set player turn back to first player
@@ -503,6 +530,10 @@ public class SecondActivity extends AppCompatActivity {
 
         //set it so the game starts again
         inGame = true;
+
+        //sets replay button back to invisible
+        Button replayButton = (Button) findViewById(R.id.replayButton);
+        replayButton.setVisibility(View.INVISIBLE);
     }
 
 
