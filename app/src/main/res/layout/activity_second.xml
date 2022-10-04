@@ -134,8 +134,9 @@
         android:id="@+id/replayButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Replay"
-        android:onClick="replay"
         android:layout_gravity="center"
-        android:backgroundTint="#583B80"/>
+        android:backgroundTint="#583B80"
+        android:onClick="replay"
+        android:text="Replay"
+        android:visibility="invisible" />
 </LinearLayout>
