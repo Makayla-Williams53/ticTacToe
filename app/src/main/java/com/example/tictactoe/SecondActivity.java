@@ -447,6 +447,64 @@ public class SecondActivity extends AppCompatActivity {
         }//end very outer if
     }//end playerClick9
 
+    public void replay(View v)
+    {
+        //set player turn back to first player
+        playerTurn = 1;
+        changeTurn();
+
+        //set all the squares back to unused
+        cell1 = false;
+        cell2 = false;
+        cell3 = false;
+        cell4 = false;
+        cell5 = false;
+        cell6 = false;
+        cell7 = false;
+        cell8 = false;
+        cell9 = false;
+
+        //set it back so that no player has used any square
+        square1 = 0;
+        square2 = 0;
+        square3 = 0;
+        square4 = 0;
+        square5 = 0;
+        square6 = 0;
+        square7 = 0;
+        square8 = 0;
+        square9 = 0;
+
+        //set each box back to the blank image
+        Drawable playerBlank = getResources().getDrawable(R.drawable.blank);
+
+        ImageView box1 = (ImageView) findViewById(R.id.xo1);
+        box1.setImageDrawable(playerBlank);
+        ImageView box2 = (ImageView) findViewById(R.id.xo2);
+        box2.setImageDrawable(playerBlank);
+        ImageView box3 = (ImageView) findViewById(R.id.xo3);
+        box3.setImageDrawable(playerBlank);
+        ImageView box4 = (ImageView) findViewById(R.id.xo4);
+        box4.setImageDrawable(playerBlank);
+        ImageView box5 = (ImageView) findViewById(R.id.xo5);
+        box5.setImageDrawable(playerBlank);
+        ImageView box6 = (ImageView) findViewById(R.id.xo6);
+        box6.setImageDrawable(playerBlank);
+        ImageView box7 = (ImageView) findViewById(R.id.xo7);
+        box7.setImageDrawable(playerBlank);
+        ImageView box8 = (ImageView) findViewById(R.id.xo8);
+        box8.setImageDrawable(playerBlank);
+        ImageView box9 = (ImageView) findViewById(R.id.xo9);
+        box9.setImageDrawable(playerBlank);
+
+        //sets the playerWin textView to blank
+        TextView winnerView = (TextView) findViewById(R.id.winnerView);
+        winnerView.setText("");
+
+        //set it so the game starts again
+        inGame = true;
+    }
+
 
     public void changeTurn()
     {
