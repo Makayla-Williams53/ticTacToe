@@ -38,6 +38,8 @@ public class SecondActivity extends AppCompatActivity {
         Button replayButton = (Button) findViewById(R.id.replayButton);
         playerText = (TextView) findViewById(R.id.playerT);
 
+        boolean found = false;
+
         if(square1 == 1 && square2 == 1 && square3 == 1)
         {
             //says player 1 won
@@ -48,6 +50,7 @@ public class SecondActivity extends AppCompatActivity {
             replayButton.setVisibility(View.VISIBLE);
             //changes player turn view
             playerText.setText("Game Over!!!");
+            found = true;
         }//end 1st if
         else if(square4 == 1 && square5 == 1 && square6 == 1)
         {
@@ -55,6 +58,7 @@ public class SecondActivity extends AppCompatActivity {
             inGame = false;
             replayButton.setVisibility(View.VISIBLE);
             playerText.setText("Game Over!!!");
+            found = true;
         }//end 2nd if
         else if(square7 == 1 && square8 == 1 && square9 == 1)
         {
@@ -62,6 +66,7 @@ public class SecondActivity extends AppCompatActivity {
             inGame = false;
             replayButton.setVisibility(View.VISIBLE);
             playerText.setText("Game Over!!!");
+            found = true;
         }//end 3rd if
         else if(square1 == 1 && square4 == 1 && square7 == 1)
         {
@@ -69,6 +74,7 @@ public class SecondActivity extends AppCompatActivity {
             inGame = false;
             replayButton.setVisibility(View.VISIBLE);
             playerText.setText("Game Over!!!");
+            found = true;
         }//end 4th if
         else if(square2 == 1 && square5 == 1 && square8 == 1)
         {
@@ -76,6 +82,7 @@ public class SecondActivity extends AppCompatActivity {
             inGame = false;
             replayButton.setVisibility(View.VISIBLE);
             playerText.setText("Game Over!!!");
+            found = true;
         }//end 5th if
         else if(square3 == 1 && square6 == 1 && square9 == 1)
         {
@@ -83,6 +90,7 @@ public class SecondActivity extends AppCompatActivity {
             inGame = false;
             replayButton.setVisibility(View.VISIBLE);
             playerText.setText("Game Over!!!");
+            found = true;
         }//end 6th if
         else if(square1 == 1 && square5 == 1 && square9 == 1)
         {
@@ -90,6 +98,7 @@ public class SecondActivity extends AppCompatActivity {
             inGame = false;
             replayButton.setVisibility(View.VISIBLE);
             playerText.setText("Game Over!!!");
+            found = true;
         }//end 7th if
         else if(square3 == 1 && square5 == 1 && square7 == 1)
         {
@@ -97,16 +106,8 @@ public class SecondActivity extends AppCompatActivity {
             inGame = false;
             replayButton.setVisibility(View.VISIBLE);
             playerText.setText("Game Over!!!");
+            found = true;
         }//end 8th if
-        else if((square1 == 1 || square1 == 2) && (square2 == 1 || square2 == 2) && (square3 == 1 || square3 == 2) && (square4 == 1 || square4 == 2) &&
-                (square5 == 1 || square5 == 2) && (square6 == 1 || square6 == 2) && (square7 == 1 || square7 == 2) && (square8 == 1 || square8 == 2))
-        {
-            winnerView.setText("Y'all tied!!!");
-            inGame = false;
-            replayButton.setVisibility(View.VISIBLE);
-            playerText.setText("Game Over!!!");
-        }//end final else if
-
 
         if(square1 == 2 && square2 == 2 && square3 == 2)
         {
@@ -114,6 +115,7 @@ public class SecondActivity extends AppCompatActivity {
             inGame = false;
             replayButton.setVisibility(View.VISIBLE);
             playerText.setText("Game Over!!!");
+            found = true;
         }//end 1st if
         else if(square4 == 2 && square5 == 2 && square6 == 2)
         {
@@ -121,6 +123,7 @@ public class SecondActivity extends AppCompatActivity {
             inGame = false;
             replayButton.setVisibility(View.VISIBLE);
             playerText.setText("Game Over!!!");
+            found = true;
         }//end 2nd if
         else if(square7 == 2 && square8 == 2 && square9 == 2)
         {
@@ -128,6 +131,7 @@ public class SecondActivity extends AppCompatActivity {
             inGame = false;
             replayButton.setVisibility(View.VISIBLE);
             playerText.setText("Game Over!!!");
+            found = true;
         }//end 3rd if
         else if(square1 == 2 && square4 == 2 && square7 == 2)
         {
@@ -135,6 +139,7 @@ public class SecondActivity extends AppCompatActivity {
             inGame = false;
             replayButton.setVisibility(View.VISIBLE);
             playerText.setText("Game Over!!!");
+            found = true;
         }//end 4th if
         else if(square2 == 2 && square5 == 2 && square8 == 2)
         {
@@ -142,6 +147,7 @@ public class SecondActivity extends AppCompatActivity {
             inGame = false;
             replayButton.setVisibility(View.VISIBLE);
             playerText.setText("Game Over!!!");
+            found = true;
         }//end 5th if
         else if(square3 == 2 && square6 == 2 && square9 == 2)
         {
@@ -149,6 +155,7 @@ public class SecondActivity extends AppCompatActivity {
             inGame = false;
             replayButton.setVisibility(View.VISIBLE);
             playerText.setText("Game Over!!!");
+            found = true;
         }//end 6th if
         else if(square1 == 2 && square5 == 2 && square9 == 2)
         {
@@ -156,6 +163,7 @@ public class SecondActivity extends AppCompatActivity {
             inGame = false;
             replayButton.setVisibility(View.VISIBLE);
             playerText.setText("Game Over!!!");
+            found = true;
         }//end 7th if
         else if(square3 == 2 && square5 == 2 && square7 == 2)
         {
@@ -163,9 +171,10 @@ public class SecondActivity extends AppCompatActivity {
             inGame = false;
             replayButton.setVisibility(View.VISIBLE);
             playerText.setText("Game Over!!!");
+            found = true;
         }//end 8th if
-        else if((square1 == 1 || square1 == 2) && (square2 == 1 || square2 == 2) && (square3 == 1 || square3 == 2) && (square4 == 1 || square4 == 2) &&
-                (square5 == 1 || square5 == 2) && (square6 == 1 || square6 == 2) && (square7 == 1 || square7 == 2) && (square8 == 1 || square8 == 2))
+        else if(!found && ((square1 == 1 || square1 == 2) && (square2 == 1 || square2 == 2) && (square3 == 1 || square3 == 2) && (square4 == 1 || square4 == 2) &&
+                (square5 == 1 || square5 == 2) && (square6 == 1 || square6 == 2) && (square7 == 1 || square7 == 2) && (square8 == 1 || square8 == 2)  && (square9 == 1 || square9 == 2)))
         {
             winnerView.setText("Y'all tied!!!");
             inGame = false;
@@ -205,8 +214,8 @@ public class SecondActivity extends AppCompatActivity {
                 //changes the variable to show that this square has been used
                 cell1 = true;
             }//end outer if
-            changeTurn();
             checkWinner();
+            changeTurn();
         }
     }//end playerClick1
 
@@ -241,8 +250,8 @@ public class SecondActivity extends AppCompatActivity {
                 cell2 = true;
 
             }//end outer if
-            changeTurn();
             checkWinner();
+            changeTurn();
         }//end the very outer if
     }//end playerClick2
 
@@ -276,8 +285,8 @@ public class SecondActivity extends AppCompatActivity {
                 //changes the variable to show that this square has been used
                 cell3 = true;
             }//end outer if
-            changeTurn();
             checkWinner();
+            changeTurn();
         }//end very outer if
     }//end playerClick3
 
@@ -312,8 +321,8 @@ public class SecondActivity extends AppCompatActivity {
                 cell4 = true;
 
             }//end outer if
-            changeTurn();
             checkWinner();
+            changeTurn();
         }//end very outer if
     }//end playerClick4
 
@@ -347,8 +356,8 @@ public class SecondActivity extends AppCompatActivity {
                 //changes the variable to show that this square has been used
                 cell5 = true;
             }//end outer if
-            changeTurn();
             checkWinner();
+            changeTurn();
         }//end very outer if
     }//end playerClick5
 
@@ -382,8 +391,8 @@ public class SecondActivity extends AppCompatActivity {
                 //changes the variable to show that this square has been used
                 cell6 = true;
             }//end outer if
-            changeTurn();
             checkWinner();
+            changeTurn();
         }//end very outer if
     }//end playerClick6
 
@@ -417,8 +426,8 @@ public class SecondActivity extends AppCompatActivity {
                 //changes the variable to show that this square has been used
                 cell7 = true;
             }//end outer if
-            changeTurn();
             checkWinner();
+            changeTurn();
         }//end very outer if
     }//end playerClick7
 
@@ -452,8 +461,8 @@ public class SecondActivity extends AppCompatActivity {
                 //changes the variable to show that this square has been used
                 cell8 = true;
             }//end outer if
-            changeTurn();
             checkWinner();
+            changeTurn();
         }//end very outer if
     }//end playerClick8
 
@@ -487,8 +496,8 @@ public class SecondActivity extends AppCompatActivity {
                 //changes the variable to show that this square has been used
                 cell9 = true;
             }//end outer if
-            changeTurn();
             checkWinner();
+            changeTurn();
         }//end very outer if
     }//end playerClick9
 
