@@ -3,7 +3,7 @@
 ## Project for Advanced Java
 
 This was an assignment in my high school class Advanced Java in October of 2022. It was a group project to teach
-us the various ways that teams organize their tasks and ideas. I worked alongside Jayden Jimenez and Alexa Torres 
+us the various ways that teams organize their tasks and ideas. I worked alongside Jayden Jimenez(Jayden0519) and Alexa Torres(AlexaGTorres) 
 and we had to have a Scrum file in order to keep track of our ideas and progress. The project we made was a fully
 functional two player Tic Tac Toe.
 
